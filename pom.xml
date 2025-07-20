@@ -18,17 +18,8 @@
     <maven.compiler.plugin.version>3.11.0</maven.compiler.plugin.version>
     <maven.war.plugin.version>3.4.0</maven.war.plugin.version>
     <maven.surefire.plugin.version>3.2.5</maven.surefire.plugin.version>
-    <maven.site.plugin.version>3.12.0</maven.site.plugin.version>
     <java.version>17</java.version>
   </properties>
-
-  <distributionManagement>
-    <site>
-      <id>site-server</id>
-      <name>Test Project Site</name>
-      <url>file:///tmp/maven-project-site</url>
-    </site>
-  </distributionManagement>
 
   <build>
     <plugins>
@@ -54,12 +45,6 @@
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>${maven.surefire.plugin.version}</version>
-      </plugin>
-
-      <!-- Site Plugin -->
-      <plugin>
-        <artifactId>maven-site-plugin</artifactId>
-        <version>${maven.site.plugin.version}</version>
       </plugin>
     </plugins>
   </build>
